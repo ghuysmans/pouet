@@ -22,7 +22,7 @@ function append(...cells) {
 	table.insertBefore(tr, table.firstChild);
 }
 
-var ws = new WebSocket("ws://"+location.host);
+var ws = new WebSocket("ws://"+location.host+location.pathname);
 
 ws.onmessage = function (x) {
 	var o = JSON.parse(x.data);
