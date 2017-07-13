@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pouet</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="app.js"></script>
+</head>
+<body>
+	<audio src="farid.mp3" id="a"></audio>
+	<form onsubmit="return send()">
+		<input placeholder="Message" id="msg" autocomplete="off" autofocus>
+		<button>Send</button>
+		<a href="#" onclick="sound('farid')">Farid</a>
+		<a href="#" onclick="sound('gratte')">Gratte</a>
+	</form>
+	<form onsubmit="return setNick()">
+		<label>Nickname: <input id="nick" size="10" required></label>
+		<button>Update</button>
+		<label><input type="checkbox" id="local"> local</label>
+		<label><input type="checkbox" id="mute"> mute</label>
+	</form>
+	<table id="log">
+	</table>
+</body>
+</html>

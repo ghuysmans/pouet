@@ -1,0 +1,12 @@
+{
+  "name": "pouet",
+  "version": "0.1.0",
+  "description": "Simple chat with sound effects",
+  "main": "pouet.js",
+  "dependencies": {
+    "express": "^4.15.3",
+    "express-ws": "^3.0.0"
+  },
+  "author": "Guillaume Huysmans",
+  "license": "GPL"
+}
