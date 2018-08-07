@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+<title>Socket.IO chat</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css" />
+<script src="m.js"></script>
+<script src="public/app.js"></script>
+</head>
+<body>
+<audio src="public/farid.mp3" id="a"></audio>
+<table id="log">
+</table>
+<form onsubmit="return send()">
+  <input id="msg" autofocus list="c" autocomplete="off"
+         placeholder="Message (try pressing &darr;)">
+  <datalist id="c">
+    <option>/clear</option>
+    <option>/in 1800 /me&nbsp;</option>
+    <option>/s farid&nbsp;</option>
+    <option>/s gratte&nbsp;</option>
+    <option>/s régis&nbsp;</option>
+    <option>/nick&nbsp;</option>
+    <option>/mute</option>
+    <option>/unmute</option>
+    <option>/pm&nbsp;</option>
+    <option>/me&nbsp;</option>
+    <option>/local&nbsp;</option>
+  </datalist>
+  <button>Send &crarr;</button>
+  <label><input type="checkbox" id="mute" checked>Mute</label>
+</form>
+</body>
+</html>

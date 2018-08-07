@@ -22,8 +22,6 @@ function append(...cells) {
 	table.appendChild(tr);
 }
 
-var ws = new WebSocket("ws://"+location.host+location.pathname);
-
 ws.onmessage = function (x) {
 	var o = JSON.parse(x.data);
 	append(o.nick, date(), o.msg);
