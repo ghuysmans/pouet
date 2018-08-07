@@ -19,7 +19,7 @@ function append(...cells) {
 		tr.appendChild(td);
 	}
 	var table = document.getElementById("log");
-	table.insertBefore(tr, table.firstChild);
+	table.appendChild(tr);
 }
 
 var ws = new WebSocket("ws://"+location.host+location.pathname);
