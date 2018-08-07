@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width" />
+	<title>Autocomplete</title>
+	<script>
+function f(e) {
+	var l = document.getElementById("l");
+	if (e.key.length == 1)
+		l.innerHTML = "<option>"+e.target.value+e.key+".machin</option>";
+	else if (e.key == "Backspace")
+		l.innerHTML = "";
+}
+	</script>
+</head>
+<body>
+<input onkeypress="f(event)" list="l" autocomplete="off" autofocus>
+<datalist id="l">
+	<option>alt</option>
+	<option>and</option>
+</datalist>
+</body>
+</html>
