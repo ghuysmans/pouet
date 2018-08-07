@@ -1,0 +1,14 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font: 13px Helvetica, Arial; }
+form {
+  background: white;
+  padding: 3px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #eee;
+}
+form input { border: 0; padding: 10px; xwidth: 90%; margin-right: .5%; }
+form button { background: rgb(130, 224, 255); border: none; padding: 10px; }
+table#log tr:nth-child(even) { background: #eee; }
+label {display: inline}
