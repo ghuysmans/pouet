@@ -25,8 +25,8 @@ function append(...cells) {
 ws.onmessage = function (x) {
 	var o = JSON.parse(x.data);
 	append(o.nick, date(), o.msg);
-	if (o.msg.startsWith("/sound "))
-		play(o.msg.slice(7));
+	if (o.msg.startsWith("/s ") || o.msg.startsWith("/sound "))
+		play(o.msg.slice(o.msg.indexOf(" ") + 1));
 };
 
 ws.onopen = function (e) {
