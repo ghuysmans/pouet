@@ -4,7 +4,7 @@
   "description": "Simple chat with sound effects",
   "main": "pouet.js",
   "dependencies": {
-    "express": "^4.15.3",
+    "express": "^4.16.3",
     "express-ws": "^3.0.0"
   },
   "author": "Guillaume Huysmans",
